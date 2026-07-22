@@ -1,6 +1,6 @@
 ---
 name: operate-xiaohongshu-wallpaper-account
-description: Operate and improve a Xiaohongshu wallpaper account through competitor research, visual direction, AI-assisted 9:16 image creation, search-aware copywriting, creator-center draft preparation, and post-performance diagnosis. Use when Codex is asked to plan, generate, prepare, cross-post, or analyze Xiaohongshu wallpaper content, especially for the user's GrainChief account and its humanistic blue-hour photography direction.
+description: Operate and improve a Xiaohongshu wallpaper account through competitor research, visual direction, modern-phone wallpaper creation, search-aware copywriting, creator-center draft preparation, and post-performance diagnosis. Use when Codex is asked to plan, generate, prepare, cross-post, or analyze Xiaohongshu wallpaper content, especially for the user's GrainChief account and its humanistic blue-hour photography direction.
 ---
 
 # Operate a Xiaohongshu Wallpaper Account
@@ -13,9 +13,11 @@ Read [references/account-playbook.md](references/account-playbook.md) before cho
 
 - Target people actively looking for phone and lock-screen wallpapers.
 - Make every clean wallpaper directly usable; do not confuse a decorative cover with the product.
-- Use exact 9:16 output. Deliver at least 1080x1920; prefer a 2160x3840 master when genuine detail supports it.
-- Keep the essential subject inside the centered 1080x1440 thumbnail-safe area. Treat the top and bottom 240 pixels of a 1080x1920 canvas as atmospheric extension.
-- Leave a quiet region for lock-screen time and system UI.
+- Separate the Xiaohongshu cover from the downloadable wallpaper product. Never require one file to serve both purposes.
+- Default clean wallpaper masters to 1080x2400 (9:20) for modern tall phones. Use a device-specific native resolution when the user supplies it; do not promise universal edge-to-edge fit across every phone.
+- Create the cover as a separate 3:4 asset, normally 1080x1440, optimized for the Xiaohongshu search/profile feed. The cover may contain a concise hook, but clean wallpaper files must contain no title, watermark, border, or decorative frame.
+- Keep the wallpaper's essential subject in the middle safe zone. Leave quiet space at the top for lock-screen time, camera cutouts, or a dynamic island, and keep essential detail away from the bottom system-control area.
+- Before upload, inspect three states: Xiaohongshu 3:4 thumbnail, lock-screen crop, and home-screen crop. Reject any set where a face, person, vehicle, horizon, or narrative anchor is awkwardly cut.
 - Prefer humanistic photography: specific place, time, weather, human traces, and emotional tension. Avoid generic AI luxury, plastic surfaces, excessive HDR, meaningless abstraction, and repeated metallic-liquid motifs.
 - Use blue-gray as the visual base with one restrained warm yellow or amber anchor when appropriate.
 - Preserve natural imperfection: film grain, slight motion blur, weather, shadow, worn materials, and believable optics.
@@ -56,14 +58,15 @@ Keep the remaining system stable so the next diagnosis is meaningful.
 
 ### 3. Write the creative brief
 
-Default to six coherent images:
+Default to one dedicated cover plus six coherent clean wallpapers:
 
-1. A cover with immediate thumbnail recognition and emotional tension.
-2. A second image that confirms the visual promise.
-3. A human trace or environmental detail.
-4. A wider establishing scene.
-5. A quieter variation with lock-screen negative space.
-6. A memorable closing image.
+1. A separate 3:4 cover with immediate thumbnail recognition, emotional tension, and a clear wallpaper promise.
+2. A first clean wallpaper that immediately fulfils the cover promise.
+3. A second wallpaper that confirms the visual world.
+4. A human trace or environmental detail.
+5. A wider establishing scene.
+6. A quieter variation with lock-screen negative space.
+7. A memorable closing wallpaper.
 
 Use a person, vehicle, lit window, ferry, station, road, bridge, or distant building as a small narrative subject. A human figure should usually occupy only 5-15% of the frame.
 
@@ -80,8 +83,16 @@ Use the `imagegen` skill for new raster images or edits. Inspect every output at
 - crushed shadow detail or over-sharpened halos
 - inconsistent color grading across the set
 - important elements outside the thumbnail-safe area
+- wallpaper dimensions that remain 9:16 when the intended product is a modern full-screen phone wallpaper
+- cover text, borders, or branding accidentally baked into clean wallpaper files
 
 Do not label an upscaled file as native 4K. Report actual pixel dimensions.
+
+For every batch, verify dimensions mechanically before upload. The default acceptance check is:
+
+- cover: exactly 1080x1440 (3:4)
+- clean wallpapers: exactly 1080x2400 (9:20), unless a different device-specific resolution was explicitly requested
+- no clean wallpaper is silently resized back to 1080x1920
 
 ### 5. Build search-aware copy
 
@@ -109,7 +120,7 @@ Use three to six relevant topics. Avoid hashtag stuffing and irrelevant camera-m
 
 Use the browser-control skill when working in the signed-in creator center.
 
-1. Upload the ordered images with the intended cover first.
+1. Upload the dedicated 3:4 cover first, followed by the clean 9:20 wallpapers in narrative order.
 2. Fill the title, body, and topics.
 3. Add a natural question that invites a useful comment, such as asking which image the user would set as the lock screen.
 4. Include `本组为AI辅助视觉创作。`
@@ -134,7 +145,8 @@ Do not change or delete a new post repeatedly during its first distribution wind
 For a content-production request, provide:
 
 - the experiment hypothesis
-- ordered final image files with actual dimensions
+- the dedicated cover and ordered clean wallpaper files with actual dimensions
+- confirmation that thumbnail, lock-screen, and home-screen crops were checked
 - title, body, and topics
 - AI disclosure status
 - the prepared creator-center draft stopped before publication
