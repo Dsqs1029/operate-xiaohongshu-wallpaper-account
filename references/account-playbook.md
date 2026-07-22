@@ -15,7 +15,10 @@
 - Images must feel premium, clear, emotionally specific, and usable as phone wallpapers.
 - Move toward humanistic photography rather than generic objects or metallic-liquid abstraction.
 - Learn from strong creators without copying their exact work.
-- Use exact 9:16 delivery and improve clarity.
+- Separate the platform cover from the wallpaper product.
+- Default modern-phone wallpaper delivery to 1080x2400 (9:20), or use the user's device-native resolution when supplied.
+- Use a separate 1080x1440 (3:4) Xiaohongshu cover; do not put cover text, borders, or watermarks into clean wallpaper files.
+- Check Xiaohongshu thumbnail, lock-screen, and home-screen crops before upload.
 - Prepare platform drafts completely but always stop before final publication.
 - Let the user perform the final Publish action.
 - After publication, use evidence rather than intuition to diagnose low traffic.
@@ -60,15 +63,20 @@ Important conclusion: high- and low-interaction posts used many of the same tags
 
 The high-performing post did not need `壁纸` in its title or tags for the platform to associate it with `胶片壁纸`. Image semantics and user behavior can contribute to search association. This does not make keywords irrelevant; it means keywords are only one layer.
 
-## Image-ratio finding
+## Image-ratio finding and correction
 
 The inspected reference carousel used exact 1080x1920 source images, a 9:16 ratio. Several images placed a rotated landscape photograph inside the portrait canvas, encouraging users to turn the phone for a full-screen view.
 
-The profile/search thumbnail is shorter than the opened 9:16 image and behaves approximately like a 3:4 crop. Design for both states:
+This is evidence about that creator's platform presentation, not proof that 9:16 fills a modern phone screen. The first production batch incorrectly reused 1080x1920 as the downloadable wallpaper size; the user confirmed that it did not fill the device screen. Do not repeat that assumption.
 
-- Full canvas: 1080x1920.
-- Thumbnail-safe center: 1080x1440.
-- Atmospheric extension: top 240 and bottom 240 pixels.
+Use two separate deliverables:
+
+- Xiaohongshu cover: 1080x1440 (3:4), composed for search/profile thumbnails.
+- Clean wallpaper: 1080x2400 (9:20) by default for modern tall phones, or the exact native resolution supplied by the user.
+
+For clean wallpapers, keep the narrative anchor in the middle safe zone, leave quiet space for lock-screen time and camera cutouts, and protect the bottom from system-control overlap. Preview every file as a lock screen and a home screen before upload.
+
+No single aspect ratio fits every device without any crop. Describe 1080x2400 as the account default, not a universal guarantee.
 
 Use the rotated presentation selectively because the user's product promise is directly usable wallpaper. A rotated cover may increase curiosity while reducing immediate utility.
 
