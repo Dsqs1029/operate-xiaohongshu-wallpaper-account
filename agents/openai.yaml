@@ -1,4 +1,4 @@
 interface:
-  display_name: "小红书壁纸账号运营"
-  short_description: "策划、制作、发布前准备与数据复盘的小红书壁纸账号运营技能"
-  default_prompt: "Use $operate-xiaohongshu-wallpaper-account to prepare the next Xiaohongshu wallpaper post and stop before final publication."
+  display_name: "双平台壁纸账号运营"
+  short_description: "制作高清壁纸并运营、复盘小红书与抖音内容"
+  default_prompt: "Use $operate-xiaohongshu-wallpaper-account to create a high-resolution wallpaper post, prepare platform-specific drafts, and stop before final publication."

@@ -1,6 +1,6 @@
 ---
 name: operate-xiaohongshu-wallpaper-account
-description: Operate and improve a Xiaohongshu wallpaper account through competitor research, visual direction, modern-phone wallpaper creation, search-aware copywriting, creator-center draft preparation, and post-performance diagnosis. Use when Codex is asked to plan, generate, prepare, cross-post, or analyze Xiaohongshu wallpaper content, especially for the user's GrainChief account and its humanistic blue-hour photography direction.
+description: Operate and improve Xiaohongshu and Douyin wallpaper content through competitor research, humanistic visual direction, high-resolution modern-phone wallpaper production, search-aware copywriting, creator-center draft preparation, cross-platform packaging, and post-performance diagnosis. Use when Codex is asked to plan, generate, upscale, prepare, cross-post, or analyze wallpaper content, especially for the user's GrainChief account and its humanistic blue-hour photography direction.
 ---
 
 # Operate a Xiaohongshu Wallpaper Account
@@ -14,8 +14,9 @@ Read [references/account-playbook.md](references/account-playbook.md) before cho
 - Target people actively looking for phone and lock-screen wallpapers.
 - Make every clean wallpaper directly usable; do not confuse a decorative cover with the product.
 - Separate the Xiaohongshu cover from the downloadable wallpaper product. Never require one file to serve both purposes.
-- Default clean wallpaper masters to 1080x2400 (9:20) for modern tall phones. Use a device-specific native resolution when the user supplies it; do not promise universal edge-to-edge fit across every phone.
-- Create the cover as a separate 3:4 asset, normally 1080x1440, optimized for the Xiaohongshu search/profile feed. The cover may contain a concise hook, but clean wallpaper files must contain no title, watermark, border, or decorative frame.
+- Default clean wallpaper masters to at least 2160x4800 (9:20) for modern tall phones. Keep a separate 1080x2400 distribution copy only when a platform or workflow needs it. Use a device-specific native resolution when the user supplies it; do not promise universal edge-to-edge fit across every phone.
+- Create the Xiaohongshu cover as a separate 3:4 master, preferably 2160x2880, optimized for the search/profile feed. Export 1080x1440 only when needed. The cover may contain a concise hook, but clean wallpaper files must contain no title, watermark, border, or decorative frame.
+- Package Douyin separately. Preserve the 9:20 clean master, then export an exact 1:2 upload copy at 2160x4320 when the current uploader accepts it, otherwise 1080x2160. Never crop the only master to satisfy Douyin.
 - Keep the wallpaper's essential subject in the middle safe zone. Leave quiet space at the top for lock-screen time, camera cutouts, or a dynamic island, and keep essential detail away from the bottom system-control area.
 - Before upload, inspect three states: Xiaohongshu 3:4 thumbnail, lock-screen crop, and home-screen crop. Reject any set where a face, person, vehicle, horizon, or narrative anchor is awkwardly cut.
 - Prefer humanistic photography: specific place, time, weather, human traces, and emotional tension. Avoid generic AI luxury, plastic surfaces, excessive HDR, meaningless abstraction, and repeated metallic-liquid motifs.
@@ -58,15 +59,14 @@ Keep the remaining system stable so the next diagnosis is meaningful.
 
 ### 3. Write the creative brief
 
-Default to one dedicated cover plus six coherent clean wallpapers:
+Default to one dedicated cover plus four to six coherent clean wallpapers:
 
 1. A separate 3:4 cover with immediate thumbnail recognition, emotional tension, and a clear wallpaper promise.
 2. A first clean wallpaper that immediately fulfils the cover promise.
 3. A second wallpaper that confirms the visual world.
 4. A human trace or environmental detail.
-5. A wider establishing scene.
-6. A quieter variation with lock-screen negative space.
-7. A memorable closing wallpaper.
+5. A wider establishing scene or quieter variation.
+6. A memorable closing wallpaper when the set needs six images.
 
 Use a person, vehicle, lit window, ferry, station, road, bridge, or distant building as a small narrative subject. A human figure should usually occupy only 5-15% of the frame.
 
@@ -86,13 +86,27 @@ Use the `imagegen` skill for new raster images or edits. Inspect every output at
 - wallpaper dimensions that remain 9:16 when the intended product is a modern full-screen phone wallpaper
 - cover text, borders, or branding accidentally baked into clean wallpaper files
 
-Do not label an upscaled file as native 4K. Report actual pixel dimensions.
+Do not label an upscaled file as native 4K. Report actual pixel dimensions and whether detail was generated, super-resolved, or merely interpolated.
+
+Use this resolution pipeline:
+
+1. Generate or edit from the largest available source.
+2. Prefer a true high-resolution render or an AI super-resolution pass before mechanical resizing.
+3. Preserve texture, film grain, fine architecture, faces, wires, signage, and shadow detail at 100% zoom.
+4. Reject waxy smoothing, ringing, doubled edges, invented text, or sharpened halos.
+5. Use Lanczos or equivalent only for final exact sizing after detail quality is acceptable.
+6. If the source is smaller than the delivery size and only ordinary interpolation is available, disclose that the file is resized rather than claiming higher detail.
 
 For every batch, verify dimensions mechanically before upload. The default acceptance check is:
 
-- cover: exactly 1080x1440 (3:4)
-- clean wallpapers: exactly 1080x2400 (9:20), unless a different device-specific resolution was explicitly requested
+- clean master: at least 2160x4800 and exactly 9:20
+- Xiaohongshu cover master: at least 2160x2880 and exactly 3:4
+- Xiaohongshu fallback cover: exactly 1080x1440
+- clean distribution copy: at least 1080x2400 and exactly 9:20
+- Douyin upload copy: at least 1080x2160 and exactly 1:2
 - no clean wallpaper is silently resized back to 1080x1920
+
+Run `python scripts/verify_wallpaper_assets.py --profile <profile> <files...>` before upload. Use `wallpaper-master`, `xhs-cover-master`, `wallpaper-distribution`, or `douyin-upload`.
 
 ### 5. Build search-aware copy
 
@@ -110,9 +124,9 @@ Use three keyword layers:
 
 Do not assume `#壁纸` reaches everyone. Broad terms create a larger, more competitive, mixed-intent pool. Long-tail terms usually reduce volume but can improve relevance.
 
-Write the title as an emotional hook plus a clear product anchor, for example:
+For a search-led wallpaper account, place the strongest category phrase early enough to survive title truncation. Combine it with an emotional hook, for example:
 
-`天亮以前，城市只剩下蓝色｜6张人文壁纸`
+`9:20满屏壁纸｜天亮以前，城市只剩下蓝色`
 
 Use three to six relevant topics. Avoid hashtag stuffing and irrelevant camera-model terms.
 
@@ -120,23 +134,31 @@ Use three to six relevant topics. Avoid hashtag stuffing and irrelevant camera-m
 
 Use the browser-control skill when working in the signed-in creator center.
 
-1. Upload the dedicated 3:4 cover first, followed by the clean 9:20 wallpapers in narrative order.
-2. Fill the title, body, and topics.
-3. Add a natural question that invites a useful comment, such as asking which image the user would set as the lock screen.
-4. Include `本组为AI辅助视觉创作。`
-5. Add the platform AI-content declaration when the control works.
-6. Verify the image count, ordering, preview, visibility, and text.
-7. Stop before the final Publish button and hand control to the user.
+1. For Xiaohongshu, upload the dedicated 3:4 cover first, followed by the clean 9:20 wallpapers in narrative order.
+2. For Douyin, use a separate 1:2 copy and normally test three or four images rather than forcing all six into one post.
+3. Fill the title, body, and topics.
+4. Add a natural question that invites a useful comment, such as asking which image the user would set as the lock screen.
+5. Include `本组为AI辅助视觉创作。`
+6. Add the platform AI-content declaration when the control works.
+7. Verify actual dimensions, image count, ordering, preview, visibility, and text.
+8. Stop before the final Publish button and hand control to the user.
 
 ### 7. Diagnose after publication
 
-Wait for an appropriate observation window, normally 24 hours for the first review. Diagnose in order:
+Wait for an appropriate observation window, normally 24 hours for the first review. Record the publication age and distinguish recommendation signals by platform:
 
-1. Low impressions: account distribution, topic relevance, or insufficient history.
-2. Adequate impressions but low CTR: cover/title mismatch or weak thumbnail recognition.
-3. Adequate CTR but low saves: attractive promise without usable wallpaper value.
-4. Saves but few follows: weak account identity or no coherent series promise.
-5. Views but short dwell: repetitive carousel, misleading cover, or insufficient second-image payoff.
+1. On Xiaohongshu, use impressions, cover CTR, views, average viewing time, saves, and follows. Do not call roughly 1,200-1,500 initial impressions "no distribution" for this account.
+2. On Douyin image posts, do not invent a cover CTR when the dashboard does not provide one. Use `1 - swipe-away rate` as the first-frame stop rate, then average images viewed, saves, shares, and follows.
+3. Adequate impressions but low CTR or stop rate: cover/title mismatch or weak first-frame recognition.
+4. Adequate CTR or stop rate but low saves: attractive imagery without clear wallpaper utility.
+5. Saves but few follows: weak account identity or no coherent series promise.
+6. Short dwell or shallow carousel depth: repetitive sequence, misleading cover, or insufficient second-image payoff.
+
+Use the account's July 2026 evidence as provisional working thresholds:
+
+- Xiaohongshu: recent weighted view/impression rate was about 9.7%; aim for a reported cover CTR of at least 12% before calling a cover competitive.
+- Douyin: aim for swipe-away rate at or below 40% and average carousel depth at or above 65%.
+- Treat these as experiment targets, not platform guarantees or universal algorithm rules.
 
 Do not change or delete a new post repeatedly during its first distribution window without a clear reason.
 
