@@ -9,6 +9,7 @@
 - Search and CTR model
 - Resolution and export pipeline
 - Cross-platform distribution diagnosis
+- Utility-led educational content pattern
 - Next-series specification
 
 ## User requirements
@@ -171,6 +172,73 @@ Working experiment targets:
 - For Douyin, test three or four images rather than automatically reposting all six.
 
 Do not infer shadow banning from one post. Separate insufficient initial distribution from weak first-pool response, and record publication age before drawing conclusions.
+
+## Utility-led educational content pattern
+
+Reference: Douyin video `新媒体运营还有没有机会了？` by `雁宇先生👀`, inspected on 2026-07-26. The video was published on 2026-07-23 and was about 14 minutes 29 seconds long.
+
+Observed public signals at inspection time:
+
+- about 14,000 likes
+- 431 comments
+- about 13,000 saves
+- 3,013 shares
+- creator profile showed about 2,940 followers and 26,000 total likes
+
+The visible counts will continue to change. No public view count was available, so do not calculate view-based conversion rates from these numbers. The unusually high save-to-like ratio is still strong evidence that viewers treated the post as reusable reference material.
+
+### Transferable mechanisms
+
+The post combined four layers:
+
+1. A broad anxiety-led question created immediate relevance.
+2. A cover promised a complete roadmap rather than one isolated tip.
+3. The body followed a structured sequence: directions, growth stages, common mistakes, practical methods, and monetization.
+4. Chapters and dense checklists made a long video easier to navigate, save, and share.
+
+The strongest transferable lesson is not the topic or exact title formula. It is the move from attractive content to useful, reference-worthy content. For this wallpaper account, that means solving wallpaper-use problems while still delivering usable wallpapers.
+
+Use this reusable structure:
+
+`specific user pain -> explain the cause -> show common mistakes -> give a compact method -> demonstrate the result -> invite a useful response`
+
+Prefer questions grounded in wallpaper-user intent:
+
+- Why does a downloaded wallpaper get cropped?
+- Why can a large wallpaper file still look blurry?
+- How should a lock-screen wallpaper leave room for the clock?
+- What is the difference between 9:16, 9:20, and 1:2?
+- Why is an attractive image not always usable as a wallpaper?
+
+### Guardrails
+
+- Do not pivot the wallpaper account into creator education or generic new-media commentary. That would attract operators rather than wallpaper users and weaken the account's audience signal.
+- Do not copy the reference video's exact cover, wording, duration, or engagement prompt.
+- Do not use claims such as `platform update`, `algorithm change`, or `universal method` without direct evidence.
+- Do not manufacture comment bait such as promising a full version that does not exist.
+- Keep utility content visually consistent with the account's blue-hour humanistic identity.
+- Pair advice with a real wallpaper, crop comparison, or downloadable result so the post still fulfils the product promise.
+
+### First account-specific experiment
+
+Working topic:
+
+`壁纸下载后为什么总被裁掉？一次讲清满屏适配`
+
+Cover promise:
+
+`壁纸总裁掉？可能不是手机的问题`
+
+Suggested 45-75 second structure:
+
+1. Show one visibly awkward crop.
+2. Explain that common 1080x1920 files are 9:16 while the account's modern-phone default is 9:20.
+3. Show three mistakes: reusing a platform cover, enlarging pixels without added detail, and placing the subject inside system-overlay zones.
+4. Show the correct 2160x4800 master and the protected top, middle, and bottom zones.
+5. Compare the thumbnail, lock-screen, and home-screen previews.
+6. Ask viewers which phone model or crop problem they want covered next.
+
+Evaluate this as a single-variable experiment. Keep the visual style and wallpaper quality stable, and test whether adding concrete utility improves saves, shares, and qualified comments. Do not compare its performance directly with a pure wallpaper carousel without noting the different content format and audience intent.
 
 ## Next-series specification
 
