@@ -7,8 +7,11 @@
 - Reference-account findings
 - Visual system
 - Search and CTR model
+- Mystic-benefit copywriting guardrails
 - Resolution and export pipeline
 - Cross-platform distribution diagnosis
+- Recent experiment learnings: wealth-themed abstract wallpapers
+- Reference transformation and originality
 - Utility-led educational content pattern
 - Next-series specification
 
@@ -23,6 +26,7 @@
 - Use a separate 2160x2880 (3:4) Xiaohongshu cover master; export 1080x1440 only when needed.
 - Preserve the 9:20 master and export a separate 1:2 Douyin copy instead of destructively cropping the master.
 - Check Xiaohongshu thumbnail, lock-screen, and home-screen crops before upload.
+- From the abstract water-ripple series onward, choose the platform's full-screen image display/upload option whenever it is available. Do not knowingly publish with a display mode that turns the wallpaper into a small framed, cropped, or non-full-screen preview unless the user explicitly chooses that tradeoff.
 - Prepare platform drafts completely but always stop before final publication.
 - Let the user perform the final Publish action.
 - After publication, use evidence rather than intuition to diagnose low traffic.
@@ -121,6 +125,42 @@ Do not equate hashtags with search queries. A search query is active user intent
 
 Avoid inserting camera models or locations for search traffic unless they are truthful and central to the content. Irrelevant equipment terms can cause the platform to suggest the wrong search intent.
 
+## Mystic-benefit copywriting guardrails
+
+The July 2026 `水生财` experiment showed that gentle fortune symbolism can be a strong wallpaper hook. It worked because it matched a real user psychology: people were not only looking for a blue image; they were also looking for a small daily good omen on the lock screen.
+
+Use this layer carefully. The account should feel like refined emotional wallpaper, not low-quality marketing or fortune-selling.
+
+Prefer:
+
+- `上升`, `渐满`, `慢慢变好`, `稳一点`, `顺一点`, `留一点好兆头`
+- metaphors grounded in the image: water flow, mountain rise, mineral veins, dawn light, layered growth
+- honest framing such as `像一个安静提醒`, `留一点好兆头`, or `慢慢往上走`
+- wallpaper-use value first: lock screen, full-screen fit, visual calm, collectible set
+
+Use sparingly:
+
+- `水生财`, `财气`, `转运`, `聚财`, `财运上升`
+- These words can appear in a title or one short body sentence, but should not be stacked repeatedly.
+
+Avoid:
+
+- hard claims such as `用了必发财`, `马上暴富`, `财运爆棚`, `必转运`, `一定变顺`
+- exaggerated emotional marketing, scare tactics, or promises of supernatural effect
+- product/service promotion language, celebrity or hot-event piggybacking, misleading title-body mismatch, or mass-produced same-format copy
+
+Safe copy pattern:
+
+`visual metaphor -> subtle good-omen line -> wallpaper utility -> AI disclosure -> restrained relevant tags`
+
+Example safe line:
+
+`不是直接许愿，只是给锁屏留一点“慢慢往上走”的好兆头。`
+
+Example line to avoid:
+
+`用了这张壁纸，财运马上爆棚。`
+
 ## Resolution and export pipeline
 
 Treat resolution and detail as separate qualities:
@@ -172,6 +212,95 @@ Working experiment targets:
 - For Douyin, test three or four images rather than automatically reposting all six.
 
 Do not infer shadow banning from one post. Separate insufficient initial distribution from weak first-pool response, and record publication age before drawing conclusions.
+
+### Snapshot observed on 2026-07-28
+
+Xiaohongshu account-level data for 2026-07-21 to 2026-07-27, last updated 2026-07-28 00:00:
+
+- about 15,000 impressions, up 335%
+- 1,448 views, up 495%
+- 9.5% cover click-through rate, up 31%
+- 66 likes
+- 16 saves
+- 16 shares
+- 4 net new followers
+
+Single-post Xiaohongshu list data for 2026-07-27:
+
+| Post | Published | Views | Comments | Likes | Saves | Shares |
+|---|---:|---:|---:|---:|---:|---:|
+| 水生财｜招财水纹壁纸 | 2026-07-27 17:01 | 442 | 2 | 31 | 8 | 2 |
+| 为什么蓝色壁纸最容易让人保存？ | 2026-07-27 17:04 | 126 | 0 | 8 | 2 | 0 |
+
+Interpretation: `水生财` was a clear Xiaohongshu winner among recent posts. The appeal likely came from the combination of a direct fortune hook, immediately usable full-screen wallpaper, blue/gold visual calm, and a first image that clearly fulfilled the title promise. Do not generalize this into aggressive fortune claims; the next iteration should keep the good-omen layer subtle and sincere.
+
+Douyin list data for the same day:
+
+| Post | Published | Format | Plays | Likes | Comments | Saves | Shares | Retention signal |
+|---|---:|---|---:|---:|---:|---:|---:|---|
+| 为什么蓝色壁纸最容易让人保存？ | 2026-07-27 17:22 | video, 00:53 | 44 | 1 | 2 | 0 | 0 | 55.77% 2-second bounce, 0% completion |
+| 水生财｜招财水纹壁纸 | 2026-07-27 17:05 | 4-image post | 16 | 1 | 0 | 0 | 0 | 57.89% swipe-away, 1.8/4 images average |
+
+Interpretation: the same `水生财` concept did not yet work on Douyin. For Douyin image posts, strengthen the first-frame stop signal and make the first two images more visually different. Do not assume Xiaohongshu's good-omen hook transfers unchanged to Douyin.
+
+## Recent experiment learnings: wealth-themed abstract wallpapers
+
+### Water-ripple abstraction
+
+The abstract water-ripple direction translated mild water motion into a refined pattern language. The strongest version used large, readable arcs, blue variations, and fine gold separators. The user explicitly preferred abstract translation over literal water-wave imagery.
+
+Working principles:
+
+- Treat water as a symbolic structure, not a literal seascape.
+- Use large repeating forms instead of fragmented small details.
+- Keep the image macro and breathable; avoid dense houses or object clutter.
+- Use full-screen upload/display mode when available.
+- Copy should frame the benefit as a good omen and calm reminder, not a guarantee.
+
+### Gold-vein mountain abstraction
+
+The later `金脉生山｜财运上升壁纸` direction moved away from reference-like shanshui line art into an original mineral/geological language.
+
+Working principles:
+
+- Gold must feel like `矿脉`, `旧金线`, `香槟金`, or aged pigment, not a luxury-gold background.
+- Use gold as thin seams, contour accents, and embedded mineral veins.
+- Avoid bright yellow, orange overload, glossy metallic sheets, coins, ingots, dragons, temples, lanterns, or any obvious fortune cliche.
+- Keep the surface matte: paper grain, stone wash, ink texture, natural irregularity.
+- Use upward geological structures to imply `财运上升`; avoid direct promise language.
+- A strong 4-image sequence can be: `金脉生山`, `金线入库`, `山纹渐满`, `一线生财`.
+
+Suggested safer title/body framing:
+
+`金脉生山｜财运上升壁纸`
+
+`金色不能俗，要像矿脉一样慢慢长出来。不是直接许愿，只是给锁屏留一点“慢慢往上走”的好兆头。`
+
+## Reference transformation and originality
+
+Strong references should be used to extract principles, not to reproduce a recognizable look. The user flagged that a green contour-line shanshui output was effective but too close to the reference account's visual language.
+
+When using a reference, separate it into:
+
+- transferable principles: line rhythm, negative space, restrained palette, symbolic abundance, poster clarity
+- non-transferable assets: exact composition, subject combination, title system, watermark/signature, palette proportions, recurring motifs such as boats plus water plus contour mountains
+
+Before publishing a reference-inspired design, run this originality check:
+
+1. Would a viewer familiar with the reference say it is the same visual language?
+2. Does it reuse the same subject stack, such as mountains + water + boats + green contour lines?
+3. Does it keep the same spatial structure, such as upper water and lower mountains?
+4. Does it preserve the reference's typography, English-title feel, logo placement, or signature mood?
+5. Is the new version adding a distinct account-owned metaphor, such as mineral veins, lock-screen utility, blue-hour human traces, or geological accumulation?
+
+If the answer to 1-4 is yes and 5 is weak, redesign before publishing.
+
+Useful transformation moves:
+
+- Change the source domain: shanshui contours -> mineral cross-section, tree rings, textile grain, weather maps, architectural shadows, or water cipher arcs.
+- Change the spatial grammar: poster landscape -> macro texture, geological slice, vertical path, quiet lock-screen field.
+- Change the semantic center: abundance landscape -> fortune as slow accumulation, stable storage, gradual rise, or calm renewal.
+- Remove signature motifs: no copied boats, willows, exact water layout, English title block, copyright-like footer, or creator-style mark.
 
 ## Utility-led educational content pattern
 
