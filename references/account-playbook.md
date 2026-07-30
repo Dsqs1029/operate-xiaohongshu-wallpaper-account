@@ -11,6 +11,7 @@
 - Resolution and export pipeline
 - Cross-platform distribution diagnosis
 - Recent experiment learnings: wealth-themed abstract wallpapers
+- Eastern auspicious abstraction system
 - Reference transformation and originality
 - Utility-led educational content pattern
 - Next-series specification
@@ -243,6 +244,42 @@ Douyin list data for the same day:
 
 Interpretation: the same `水生财` concept did not yet work on Douyin. For Douyin image posts, strengthen the first-frame stop signal and make the first two images more visually different. Do not assume Xiaohongshu's good-omen hook transfers unchanged to Douyin.
 
+### Snapshot observed on 2026-07-30
+
+Xiaohongshu account-level data for 2026-07-23 to 2026-07-29:
+
+- about 23,000 impressions, up 188%
+- 2,510 views, up 256%
+- 10.5% cover click-through rate, up 16%
+- 7 seconds average viewing time, up 50%
+- 5.2 hours total viewing time, up 456%
+- 143 interactions
+- 12 net new followers
+- 137 profile visitors
+
+The creator center reported that views, followers, profile visitors, and interactions were above 95% of comparable creators for that period. Treat the peer percentile as directional platform context, not an account guarantee.
+
+Early same-day data for `东方玄学壁纸｜天一生水，财气归位`, published 2026-07-30 13:13:
+
+- 235 views
+- 15 likes
+- 7 comments
+- 8 saves
+- 1 share
+- impressions, cover CTR, and viewing time had not yet populated
+
+The visible interactions totaled about 13.2% of views. This was a strong early post-click signal, especially for comments and saves, but it was too early to infer final distribution. Do not compare the incomplete same-day view count with mature posts.
+
+Mature comparison: `水生财｜招财水纹壁纸` had 9,541 impressions, 1,425 views, 13.9% cover CTR, 70 likes, 2 comments, 26 saves, 6 follows, 4 shares, and 8 seconds average viewing time.
+
+Working interpretation:
+
+- the explicit `国学玄学` positioning may attract a more qualified audience than generic blue wallpaper framing
+- explaining the symbolic source can produce comments as well as saves
+- the title, first image, and body must all fulfil the same promise
+- keep the cultural explanation sincere and concrete; do not escalate into stronger fortune claims
+- wait for the 24-hour exposure and CTR data before calling a new concept a distribution winner
+
 ## Recent experiment learnings: wealth-themed abstract wallpapers
 
 ### Water-ripple abstraction
@@ -275,6 +312,92 @@ Suggested safer title/body framing:
 `金脉生山｜财运上升壁纸`
 
 `金色不能俗，要像矿脉一样慢慢长出来。不是直接许愿，只是给锁屏留一点“慢慢往上走”的好兆头。`
+
+## Eastern auspicious abstraction system
+
+Use this system to expand beyond water without losing the audience that responded to the good-omen layer.
+
+### Translation model
+
+Build each series through five linked decisions:
+
+`cultural source -> emotional benefit -> abstract structure -> material language -> wallpaper sequence`
+
+Examples:
+
+| Cultural source | Emotional benefit | Abstract structure | Material language |
+|---|---|---|---|
+| `天一生水` / water | flow, gathering, renewal | large arcs, a centered source, movement from dispersed to settled | indigo pigment, fine aged-gold separators |
+| `艮为山` / mountain | support, stability, dependable backing | one monumental mass, three broad terraces, enclosing ridges | stone blue, mineral strata, matte antique-gold seams |
+| wood / growth | steady development | roots, rings, one upward trunk or sparse bamboo rhythm | moss green, charcoal, warm paper, restrained gold |
+| gate or path | opportunity gradually opening | one central passage, a few broad steps, protected negative space | stone, dawn ivory, a small warm anchor |
+| celestial order | direction and clarity | circle-square balance, seven restrained points, orbital spacing | deep blue, silver gray, champagne-gold pinpoints |
+
+Do not display a trigram, Bagua, talisman, coin, ingot, dragon, temple, or another fortune symbol merely to make the theme legible. Let composition carry the idea. A literal symbol should appear only when historically relevant, visually integrated, and clearly more refined than leaving it out.
+
+### Visual identity
+
+Keep these constants across the auspicious series:
+
+- macro, monumental forms rather than many small decorative objects
+- a stone-blue, ink-blue, fog-white, or mineral-green base
+- muted antique gold used as embedded seams, contour traces, or tiny light points
+- matte mineral pigment, dry-brush grain, fibrous paper, linen, stone wash, or another tactile imperfection
+- generous upper negative space for lock-screen time
+- one readable primary silhouette and a protected middle safe zone
+- at most one small human trace: a pine, pavilion, path, window, or distant figure
+
+Reject:
+
+- glossy gold sheets, orange-yellow glow, liquid metal, coins, ingots, or luxury-product lighting
+- saturated purple-gold gradients, excessive sunbeams, HDR halos, or plastic 3D surfaces
+- dense villages, many competing peaks, repeated tiny motifs, or fragmented decoration
+- direct copying of reference palettes, contour systems, subject stacks, English title blocks, or creator signatures
+
+### `山有靠` five-image sequence
+
+The set prepared on 2026-07-30 for a scheduled 2026-07-31 release established a reusable mountain sequence:
+
+1. **Main mountain**: one grand connected mountain as the immediate promise.
+2. **Hidden gold veins**: a macro cliff section that suggests slow accumulation.
+3. **Mountain gate path**: two mountain shoulders and a few broad steps suggesting a route opening.
+4. **Solitary pine**: a quieter page expressing durable growth after stability.
+5. **Embracing mountains**: one continuous distant arc as a calm closing image.
+
+Sequence logic:
+
+`support -> accumulation -> opportunity -> endurance -> settlement`
+
+Keep the first image strongest and most singular. Reduce information density on images four and five so the carousel has rhythm instead of five competing covers.
+
+### Copywriting pattern
+
+Explain the cultural source without presenting the wallpaper as a supernatural product:
+
+1. name the source accurately, such as `艮为山`
+2. explain its ordinary emotional meaning: stability, restraint, dependable support
+3. map each image to a human idea
+4. end with a sincere line that works without superstition
+5. disclose AI-assisted visual creation
+
+Useful tone:
+
+`有人可依很好，自己站稳更重要。`
+
+Avoid:
+
+- `换上就有贵人`
+- `事业马上起飞`
+- `必得靠山`
+- any promise that the wallpaper changes external events
+
+### Platform packaging learned from this set
+
+- Keep Xiaohongshu clean images at exact 9:20; the prepared distribution files were 1080x2400.
+- Export Douyin separately at exact 1:2; the prepared files were 1080x2160.
+- Preserve identical narrative order across platforms unless Douyin data supports a shorter sequence.
+- Treat enlarged 2160x4800 copies from smaller generated sources as resized masters, not native high-resolution renders.
+- Choose the platform's full-screen image presentation when available.
 
 ## Reference transformation and originality
 

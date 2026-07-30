@@ -1,6 +1,6 @@
 ---
 name: operate-xiaohongshu-wallpaper-account
-description: Operate and improve Xiaohongshu and Douyin wallpaper content through competitor research, humanistic visual direction, high-resolution modern-phone wallpaper production, search-aware copywriting, creator-center draft preparation, cross-platform packaging, and post-performance diagnosis. Use when Codex is asked to plan, generate, upscale, prepare, cross-post, or analyze wallpaper content, especially for the user's GrainChief account and its humanistic blue-hour photography direction.
+description: Operate and improve Xiaohongshu and Douyin wallpaper content through competitor research, humanistic or refined Eastern-auspicious visual direction, high-resolution modern-phone wallpaper production, search-aware copywriting, creator-center draft preparation, cross-platform packaging, and post-performance diagnosis. Use when Codex is asked to plan, generate, upscale, prepare, cross-post, or analyze wallpaper content, especially for the user's GrainChief account.
 ---
 
 # Operate a Xiaohongshu Wallpaper Account
@@ -19,10 +19,12 @@ Read [references/account-playbook.md](references/account-playbook.md) before cho
 - Package Douyin separately. Preserve the 9:20 clean master, then export an exact 1:2 upload copy at 2160x4320 when the current uploader accepts it, otherwise 1080x2160. Never crop the only master to satisfy Douyin.
 - Keep the wallpaper's essential subject in the middle safe zone. Leave quiet space at the top for lock-screen time, camera cutouts, or a dynamic island, and keep essential detail away from the bottom system-control area.
 - Before upload, inspect three states: Xiaohongshu 3:4 thumbnail, lock-screen crop, and home-screen crop. Reject any set where a face, person, vehicle, horizon, or narrative anchor is awkwardly cut.
-- Prefer humanistic photography: specific place, time, weather, human traces, and emotional tension. Avoid generic AI luxury, plastic surfaces, excessive HDR, meaningless abstraction, and repeated metallic-liquid motifs.
+- For photographic series, prefer specific place, time, weather, human traces, and emotional tension. For Eastern-auspicious series, translate a sourced idea into restrained form, material, composition, and sequence instead of pasting literal mystical symbols onto an image.
+- Avoid generic AI luxury, plastic surfaces, excessive HDR, meaningless abstraction, repeated metallic-liquid motifs, bright fortune clichés, and hard supernatural claims.
 - Use blue-gray as the visual base with one restrained warm yellow or amber anchor when appropriate.
 - Preserve natural imperfection: film grain, slight motion blur, weather, shadow, worn materials, and believable optics.
 - Do not copy another creator's exact images, title formula, watermark, signature, or composition. Transfer principles only.
+- Do not let one successful metaphor become the whole account. Rotate among water, mountain, wood, gates or paths, celestial order, and other culturally grounded structures while keeping the account's material and color identity coherent.
 - Disclose AI-assisted visual creation in the body and use the platform content declaration when available.
 - Never claim a camera, lens, location, or documentary event that did not exist.
 - Never click the final **Publish** button on Xiaohongshu, Douyin, or another platform. Upload assets, fill all fields, verify the preview, and stop immediately before publication for the user to confirm.
