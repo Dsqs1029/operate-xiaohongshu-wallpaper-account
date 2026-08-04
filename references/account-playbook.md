@@ -10,6 +10,7 @@
 - Mystic-benefit copywriting guardrails
 - Resolution and export pipeline
 - Cross-platform distribution diagnosis
+- Xiaohongshu 2026-08-04 export: auspicious wallpaper thesis validated
 - Recent experiment learnings: wealth-themed abstract wallpapers
 - Eastern auspicious abstraction system
 - Reference transformation and originality
@@ -279,6 +280,112 @@ Working interpretation:
 - the title, first image, and body must all fulfil the same promise
 - keep the cultural explanation sincere and concrete; do not escalate into stronger fortune claims
 - wait for the 24-hour exposure and CTR data before calling a new concept a distribution winner
+
+## Xiaohongshu 2026-08-04 export: auspicious wallpaper thesis validated
+
+Source: Xiaohongshu creator-center export `笔记列表明细表.xlsx`, analyzed on 2026-08-04. The workbook exported 59 notes with title, publish time, format, impressions, views, cover CTR, likes, comments, saves, follows, shares, average viewing time, and bullet comments.
+
+The clearest account-level learning is that the account did not merely improve after publishing better wallpapers. It improved after moving from generic wallpaper or humanistic mood wallpaper into `specific emotional benefit + refined Eastern auspicious wallpaper`.
+
+### Before and after the 2026-07-27 turn
+
+Use 2026-07-27 as the rough transition date because `水生财｜招财水纹壁纸` began the explicit good-omen wallpaper line.
+
+| Period | Notes | Impressions | Views | Avg reported CTR | Saves / view | Interactions / view |
+|---|---:|---:|---:|---:|---:|---:|
+| Before 2026-07-27 | 46 | 935,745 | 160,227 | 8.1% | 0.21% | 1.19% |
+| 2026-07-27 onward | 13 | 509,847 | 90,885 | 11.6% | 1.81% | 7.01% |
+| 2026-07-27 onward, rows with populated impressions | 11 | 509,847 | 88,024 | 13.8% | 1.79% | 6.94% |
+
+Interpretation:
+
+- The new direction lifted both discovery and post-click value.
+- The save rate after 2026-07-27 was roughly 8.6 times the older period.
+- The interaction rate after 2026-07-27 was roughly 5.9 times the older period.
+- This is stronger evidence than a single viral post because multiple auspicious themes performed: water, mountain, bamboo, earth, and deer.
+
+### Strongest validated notes
+
+| Note | Impressions | Views | Cover CTR | Likes | Comments | Saves | Follows | Shares | Avg viewing time |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `东方玄学壁纸｜天一生水，财气归位` | 342,771 | 55,080 | 13.7% | 2,596 | 60 | 999 | 146 | 151 | 11s |
+| `东方玄学壁纸｜山有靠，事有成` | 73,557 | 15,462 | 15.4% | 610 | 43 | 262 | 63 | 38 | 10s |
+| `水生财｜招财水纹壁纸` | 45,945 | 7,312 | 14.0% | 337 | 26 | 181 | 40 | 17 | 9s |
+| `竹有节｜步步高升` | 8,873 | 2,485 | 17.2% | 103 | 11 | 41 | 9 | 4 | 14s |
+| `厚土藏金｜国学玄学系丰盛壁纸` | 12,696 | 2,325 | 14.4% | 69 | 9 | 25 | 8 | 6 | 10s |
+
+Working interpretation:
+
+- `东方玄学壁纸` is a useful title prefix when the theme needs fast classification.
+- A direct psychological benefit is a stronger hook than a vague aesthetic mood: `财气归位`, `山有靠`, `事有成`, `步步高升`, `丰盛`.
+- The visual product must still be a refined wallpaper. The title gets the click; the usable lock-screen image gets saves.
+- Average viewing time around 9-14 seconds on these image posts is enough to support distribution when saves and comments are strong.
+
+### Promising but still incomplete latest signals
+
+`山中见鹿｜贵人引路壁纸` was exported before impressions and CTR populated, so do not judge its reach yet. Its visible post-click signals were strong:
+
+- 2,609 views
+- 161 likes
+- 21 comments
+- 57 saves
+- 5 shares
+- 9.35% interaction / view
+- 2.18% saves / view
+
+Interpretation: `贵人引路` is a strong expansion vector. Continue exploring deer, road, mountain gate, pine, and distant guide imagery, but keep the deer small and scenic rather than making a logo or mascot.
+
+`金水归藏｜招财壁纸` was also too new at export time:
+
+- 252 views
+- 9 likes
+- 1 comment
+- 4 saves
+- 5.56% interaction / view
+- 1.59% saves / view
+
+Interpretation: wait for populated impressions and cover CTR before judging. The early save rate is acceptable, but not enough to call the concept a winner.
+
+### Weak signals to avoid as primary account direction
+
+`为什么蓝色壁纸最容易让人保存？` had 3,973 impressions, 255 views, and only 2.3% CTR. Utility/education can still be useful, but it should not displace the main wallpaper product or be framed as an abstract explanation.
+
+`一次入档，永久更新｜首发 ¥19.9` had 1,191 impressions, 279 views, 10.2% CTR, 4 likes, and no saves, comments, follows, or shares. The note looked more like a transaction than a collectible wallpaper post. Treat direct offer or paid-archive language as a support layer, not the main content engine.
+
+### New operating rule
+
+The account's strongest current formula is:
+
+`clear wallpaper category -> explicit auspicious benefit -> refined symbolic visual -> usable full-screen image -> gentle blessing copy`
+
+Practical title patterns:
+
+- `东方玄学壁纸｜[image symbol], [benefit]`
+- `[symbol phrase]｜[benefit]壁纸`
+- `[五行/国学 phrase]｜[soft outcome]壁纸`
+
+Examples to prioritize:
+
+- `东方玄学壁纸｜松下有路，贵人扶持`
+- `东方玄学壁纸｜山门已启，转机将至`
+- `东方玄学壁纸｜月满不盈，好运将满`
+- `东方玄学壁纸｜石中生玉，慢慢变好`
+- `东方玄学壁纸｜云梯渐上，事业上行`
+
+Do not let the title become too poetic to classify. The thumbnail audience should immediately understand both `this is a wallpaper` and `this is the good omen it offers`.
+
+### Visual production implication
+
+For each auspicious concept, the first image must visibly fulfil the title:
+
+- `山有靠`: one stable, monumental mountain.
+- `天一生水` / `水生财`: a readable blue water structure with restrained gold or gathering motion.
+- `竹有节`: bamboo rhythm, upward segmentation, breathable negative space.
+- `厚土藏金`: earth/mineral layers with hidden gold, not treasure.
+- `贵人引路`: road, opening, distant guide/deer, or a path through mountains.
+- `松下有路`: pine, path, distant light or mountain gate.
+
+Keep the promise literal enough for a search/feed thumbnail, but render it through modern abstract Eastern materials rather than direct fortune symbols.
 
 ## Recent experiment learnings: wealth-themed abstract wallpapers
 
