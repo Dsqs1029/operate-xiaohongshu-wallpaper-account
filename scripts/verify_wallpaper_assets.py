@@ -12,6 +12,7 @@ from PIL import Image
 
 PROFILES = {
     "wallpaper-master": (9, 20, 2160, 4800),
+    "desktop-master": (16, 9, 3840, 2160),
     "xhs-cover-master": (3, 4, 2160, 2880),
     "wallpaper-distribution": (9, 20, 1080, 2400),
     "douyin-upload": (1, 2, 1080, 2160),

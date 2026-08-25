@@ -27,6 +27,9 @@
 - Default modern-phone wallpaper masters to at least 2160x4800 (9:20), or use the user's device-native resolution when supplied.
 - Use a separate 2160x2880 (3:4) Xiaohongshu cover master; export 1080x1440 only when needed.
 - Preserve the 9:20 master and export a separate 1:2 Douyin copy instead of destructively cropping the master.
+- For direct GrainChief production, approve one preview first; `补全` defaults to three phone wallpapers at 2160x4800 and two independently composed desktop wallpapers at 3840x2160.
+- Preserve clean archive copies, but apply the approved exact-position GrainChief template to every public wallpaper export. Follow [grainchief-image-production.md](grainchief-image-production.md).
+- Current title prefix is `东方壁纸`. Do not use `玄学` in new titles unless the user explicitly changes this rule; old titles below are historical evidence.
 - Check Xiaohongshu thumbnail, lock-screen, and home-screen crops before upload.
 - From the abstract water-ripple series onward, choose the platform's full-screen image display/upload option whenever it is available. Do not knowingly publish with a display mode that turns the wallpaper into a small framed, cropped, or non-full-screen preview unless the user explicitly chooses that tradeoff.
 - Prepare platform drafts completely but always stop before final publication.
@@ -316,7 +319,7 @@ Interpretation:
 
 Working interpretation:
 
-- `东方玄学壁纸` is a useful title prefix when the theme needs fast classification.
+- At that time, `东方玄学壁纸` helped fast classification. Treat this as historical performance evidence, not the current naming rule; new titles use `东方壁纸`.
 - A direct psychological benefit is a stronger hook than a vague aesthetic mood: `财气归位`, `山有靠`, `事有成`, `步步高升`, `丰盛`.
 - The visual product must still be a refined wallpaper. The title gets the click; the usable lock-screen image gets saves.
 - Average viewing time around 9-14 seconds on these image posts is enough to support distribution when saves and comments are strong.
@@ -360,17 +363,17 @@ The account's strongest current formula is:
 
 Practical title patterns:
 
-- `东方玄学壁纸｜[image symbol], [benefit]`
+- `东方壁纸｜[image symbol], [restrained emotional line]`
 - `[symbol phrase]｜[benefit]壁纸`
 - `[五行/国学 phrase]｜[soft outcome]壁纸`
 
 Examples to prioritize:
 
-- `东方玄学壁纸｜松下有路，贵人扶持`
-- `东方玄学壁纸｜山门已启，转机将至`
-- `东方玄学壁纸｜月满不盈，好运将满`
-- `东方玄学壁纸｜石中生玉，慢慢变好`
-- `东方玄学壁纸｜云梯渐上，事业上行`
+- `东方壁纸｜松下有路，前方渐明`
+- `东方壁纸｜山门已启，转机将至`
+- `东方壁纸｜月满不盈，静候花开`
+- `东方壁纸｜石中生玉，慢慢变好`
+- `东方壁纸｜雾谷有列车，远方正经过`
 
 Do not let the title become too poetic to classify. The thumbnail audience should immediately understand both `this is a wallpaper` and `this is the good omen it offers`.
 

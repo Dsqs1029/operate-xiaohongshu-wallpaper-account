@@ -1,6 +1,6 @@
 # 双平台壁纸账号运营 Skill
 
-面向小红书与抖音壁纸账号的 Codex 技能：从竞品研究、人文摄影视觉方向、高清壁纸制作，到搜索文案、发布前准备和数据复盘，形成一套可以持续迭代的内容工作流。
+面向小红书与抖音壁纸账号的 Codex 技能：从竞品研究、人文摄影、东方视觉与大环境绘本方向，到高清壁纸制作、搜索文案、发布前准备和数据复盘，形成一套可以持续迭代的内容工作流。
 
 [![Codex Skill](https://img.shields.io/badge/Codex-Skill-111827)](./SKILL.md)
 [![Platforms](https://img.shields.io/badge/Platforms-小红书%20%7C%20抖音-ff2442)](./references/account-playbook.md)
@@ -22,9 +22,9 @@ flowchart LR
 这个 Skill 将创作和数据放在同一个闭环里：
 
 - 研究参考账号，但只迁移原则，不复制图片、签名或构图。
-- 建立人文摄影、蓝调时刻、城市叙事等连续视觉系列。
-- 生成适配现代手机的高清壁纸母版和平台副本。
-- 分离“吸引点击的封面”与“可以直接使用的无字壁纸”。
+- 建立人文摄影、东方视觉、大环境绘本等连续视觉系列。
+- 先生成一张预览确认方向，再补全为 3 张手机壁纸和 2 张电脑壁纸。
+- 分离“吸引点击的封面”“内部无水印归档”与“带标准水印的公开壁纸”。
 - 为小红书搜索和抖音首屏分别设计标题、话题与图片顺序。
 - 读取创作者中心数据，判断是曝光不足、点击不足，还是收藏价值不足。
 - 完成上传和文案填写后停在最终发布按钮前，由用户确认发布。
@@ -33,7 +33,10 @@ flowchart LR
 
 | 用途 | 比例 | 首选尺寸 | 说明 |
 |---|---:|---:|---|
-| 高清壁纸母版 | 9:20 | 2160×4800 或更高 | 保留无字、无水印版本 |
+| 手机壁纸归档 | 9:20 | 2160×4800 或更高 | 保留无字、无水印版本 |
+| 手机公开壁纸 | 9:20 | 2160×4800 | 直接叠加竖版标准水印模板 |
+| 电脑壁纸归档 | 16:9 | 3840×2160 | 独立横版构图，不由竖图硬裁 |
+| 电脑公开壁纸 | 16:9 | 3840×2160 | 直接叠加横版标准水印模板 |
 | 小红书封面母版 | 3:4 | 2160×2880 | 针对搜索页和主页缩略图构图 |
 | 小红书封面副本 | 3:4 | 1080×1440 | 平台或工作流需要时导出 |
 | 壁纸分发副本 | 9:20 | 1080×2400 或更高 | 由高清母版生成 |
@@ -61,6 +64,12 @@ Dsqs1029/operate-xiaohongshu-wallpaper-account
 
 ```text
 使用 $operate-xiaohongshu-wallpaper-account
+先出一张大环境绘本壁纸预览；确认后补全为
+3 张手机壁纸和 2 张电脑壁纸，并统一添加 GrainChief 水印。
+```
+
+```text
+使用 $operate-xiaohongshu-wallpaper-account
 把刚才的小红书主题适配成抖音图文，控制为 4 张，
 检查 1:2 比例并分析上一期的划走率。
 ```
@@ -84,6 +93,7 @@ python scripts/verify_wallpaper_assets.py \
 支持的 profile：
 
 - `wallpaper-master`：至少 2160×4800，严格 9:20。
+- `desktop-master`：3840×2160，严格 16:9。
 - `xhs-cover-master`：至少 2160×2880，严格 3:4。
 - `wallpaper-distribution`：至少 1080×2400，严格 9:20。
 - `douyin-upload`：至少 1080×2160，严格 1:2。
@@ -92,6 +102,23 @@ python scripts/verify_wallpaper_assets.py \
 
 ```bash
 python -m pip install Pillow
+```
+
+为现有图片添加标准水印：
+
+```bash
+python scripts/grainchief_watermark.py \
+  path/to/phone.png path/to/desktop.png \
+  --output-dir path/to/watermarked
+```
+
+从 3 张手机源图和 2 张电脑源图完成整组交付：
+
+```bash
+python scripts/complete_grainchief_set.py \
+  --output-root path/to/series \
+  --phone phone-01.png phone-02.png phone-03.png \
+  --desktop desktop-01.png desktop-02.png
 ```
 
 ## 数据诊断框架
@@ -124,15 +151,17 @@ python -m pip install Pillow
 
 ## 视觉方向
 
-核心方向是具有真实生活痕迹的电影感人文壁纸：
+当前视觉系统不限制在单一题材，但必须保持缩略图识别力、整体和谐与壁纸可用性：
 
 - 蓝调、黎明、雨雪、雾、海岸天气
 - 车站、渡轮、旧巴士、便利店、道路、桥梁和窗户
+- 东方植物、建筑、纹样与抽象符号的克制转译
+- 大环境占约九成、故事主体很小的成熟绘本画面
 - 小比例人物或人类痕迹，而不是普通大头人像
 - 大面积环境留白和一个克制的暖色锚点
 - 自然颗粒、轻微运动模糊、旧材质和可信的阴影
 
-避免廉价霓虹、塑料质感、虚假奢华、无法辨认的 AI 文字，以及缺少叙事主体的空泛风景。
+避免廉价霓虹、塑料质感、虚假奢华、过强水墨感、无法辨认的 AI 文字，以及缺少叙事主体的空泛风景。当前新标题统一使用“东方壁纸”，不再使用“玄学”二字。
 
 ## 安全边界
 
@@ -149,10 +178,17 @@ python -m pip install Pillow
 ├── SKILL.md
 ├── agents/
 │   └── openai.yaml
+├── assets/
+│   └── watermark/
+│       ├── grainchief-watermark-position-template-horizontal-3840x2160-v2.png
+│       └── grainchief-watermark-position-template-vertical-2160x4800.png
 ├── references/
-│   └── account-playbook.md
+│   ├── account-playbook.md
+│   └── grainchief-image-production.md
 └── scripts/
+    ├── complete_grainchief_set.py
+    ├── grainchief_watermark.py
     └── verify_wallpaper_assets.py
 ```
 
-详细执行规则见 [SKILL.md](./SKILL.md)，账号历史基线与跨平台诊断案例见 [account-playbook.md](./references/account-playbook.md)。
+详细执行规则见 [SKILL.md](./SKILL.md)，出图与补全流程见 [grainchief-image-production.md](./references/grainchief-image-production.md)，账号历史基线与跨平台诊断案例见 [account-playbook.md](./references/account-playbook.md)。

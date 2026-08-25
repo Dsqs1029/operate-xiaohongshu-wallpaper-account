@@ -9,13 +9,16 @@ Build a recognizable wallpaper account rather than publishing unrelated attracti
 
 Read [references/account-playbook.md](references/account-playbook.md) before choosing a visual direction, diagnosing performance, or preparing a post.
 
+For GrainChief image generation, preview approval, set completion, watermarking, and export packaging, read [references/grainchief-image-production.md](references/grainchief-image-production.md).
+
 ## Non-negotiable requirements
 
 - Target people actively looking for phone and lock-screen wallpapers.
-- Make every clean wallpaper directly usable; do not confuse a decorative cover with the product.
+- Make every wallpaper directly usable; do not confuse a decorative cover with the product.
 - Separate the Xiaohongshu cover from the downloadable wallpaper product. Never require one file to serve both purposes.
-- Default clean wallpaper masters to at least 2160x4800 (9:20) for modern tall phones. Keep a separate 1080x2400 distribution copy only when a platform or workflow needs it. Use a device-specific native resolution when the user supplies it; do not promise universal edge-to-edge fit across every phone.
-- Create the Xiaohongshu cover as a separate 3:4 master, preferably 2160x2880, optimized for the search/profile feed. Export 1080x1440 only when needed. The cover may contain a concise hook, but clean wallpaper files must contain no title, watermark, border, or decorative frame.
+- Default phone archive masters to at least 2160x4800 (9:20) and desktop archive masters to 3840x2160 (16:9). Keep a separate 1080x2400 distribution copy only when a platform or workflow needs it. Use a device-specific native resolution when the user supplies it; do not promise universal edge-to-edge fit across every phone.
+- Keep an internal clean archive without title, watermark, border, or decorative frame. For GrainChief public wallpaper exports, add only the approved exact-position watermark through deterministic post-processing; never ask the image model to draw it.
+- Create the Xiaohongshu cover as a separate 3:4 master, preferably 2160x2880, optimized for the search/profile feed. Export 1080x1440 only when needed.
 - Package Douyin separately. Preserve the 9:20 clean master, then export an exact 1:2 upload copy at 2160x4320 when the current uploader accepts it, otherwise 1080x2160. Never crop the only master to satisfy Douyin.
 - Keep the wallpaper's essential subject in the middle safe zone. Leave quiet space at the top for lock-screen time, camera cutouts, or a dynamic island, and keep essential detail away from the bottom system-control area.
 - Before upload, inspect three states: Xiaohongshu 3:4 thumbnail, lock-screen crop, and home-screen crop. Reject any set where a face, person, vehicle, horizon, or narrative anchor is awkwardly cut.
@@ -25,6 +28,7 @@ Read [references/account-playbook.md](references/account-playbook.md) before cho
 - Preserve natural imperfection: film grain, slight motion blur, weather, shadow, worn materials, and believable optics.
 - Do not copy another creator's exact images, title formula, watermark, signature, or composition. Transfer principles only.
 - Do not let one successful metaphor become the whole account. Rotate among water, mountain, wood, gates or paths, celestial order, and other culturally grounded structures while keeping the account's material and color identity coherent.
+- Use `东方壁纸` as the current title prefix. Do not use `玄学` in new titles unless the user explicitly asks to restore it; historical examples containing that word remain historical evidence only.
 - Disclose AI-assisted visual creation in the body and use the platform content declaration when available.
 - Never claim a camera, lens, location, or documentary event that did not exist.
 - Never click the final **Publish** button on Xiaohongshu, Douyin, or another platform. Upload assets, fill all fields, verify the preview, and stop immediately before publication for the user to confirm.
@@ -74,6 +78,8 @@ Use a person, vehicle, lit window, ferry, station, road, bridge, or distant buil
 
 One image may test the reference creator's rotated full-screen presentation, but keep the other images upright and directly usable as wallpapers.
 
+For the user's iterative GrainChief production loop, create one preview first. After explicit approval and the command `补全`, default to a coherent five-image product set: three phone wallpapers and two independently composed desktop wallpapers. Follow the detailed state and export rules in [references/grainchief-image-production.md](references/grainchief-image-production.md).
+
 ### 4. Generate and quality-check images
 
 Use the `imagegen` skill for new raster images or edits. Inspect every output at full size and reject images with:
@@ -102,13 +108,14 @@ Use this resolution pipeline:
 For every batch, verify dimensions mechanically before upload. The default acceptance check is:
 
 - clean master: at least 2160x4800 and exactly 9:20
+- desktop master: exactly 3840x2160 and exactly 16:9
 - Xiaohongshu cover master: at least 2160x2880 and exactly 3:4
 - Xiaohongshu fallback cover: exactly 1080x1440
 - clean distribution copy: at least 1080x2400 and exactly 9:20
 - Douyin upload copy: at least 1080x2160 and exactly 1:2
 - no clean wallpaper is silently resized back to 1080x1920
 
-Run `python scripts/verify_wallpaper_assets.py --profile <profile> <files...>` before upload. Use `wallpaper-master`, `xhs-cover-master`, `wallpaper-distribution`, or `douyin-upload`.
+Run `python scripts/verify_wallpaper_assets.py --profile <profile> <files...>` before upload. Use `wallpaper-master`, `desktop-master`, `xhs-cover-master`, `wallpaper-distribution`, or `douyin-upload`.
 
 ### 5. Build search-aware copy
 
@@ -126,9 +133,9 @@ Use three keyword layers:
 
 Do not assume `#壁纸` reaches everyone. Broad terms create a larger, more competitive, mixed-intent pool. Long-tail terms usually reduce volume but can improve relevance.
 
-For a search-led wallpaper account, place the strongest category phrase early enough to survive title truncation. Combine it with an emotional hook, for example:
+For a search-led wallpaper account, place the strongest category phrase early enough to survive title truncation. For the current GrainChief naming system, combine `东方壁纸` with a concrete scene and emotional hook, for example:
 
-`9:20满屏壁纸｜天亮以前，城市只剩下蓝色`
+`东方壁纸｜雾谷有列车，远方正经过`
 
 Use three to six relevant topics. Avoid hashtag stuffing and irrelevant camera-model terms.
 
