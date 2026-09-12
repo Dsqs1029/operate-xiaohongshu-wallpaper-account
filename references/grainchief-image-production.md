@@ -248,6 +248,7 @@ Current title rule:
 `东方壁纸｜[concrete image], [restrained emotional line]`
 
 Do not use `玄学` in new titles unless the user explicitly changes this rule.
+Before copy handoff or publishing, check historical titles. Never reuse an existing title; for related themes, change the framing angle and keyword combination.
 
 For `文案`, return:
 

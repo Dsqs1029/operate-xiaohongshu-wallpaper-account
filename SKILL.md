@@ -29,6 +29,7 @@ For GrainChief image generation, preview approval, set completion, watermarking,
 - Do not copy another creator's exact images, title formula, watermark, signature, or composition. Transfer principles only.
 - Do not let one successful metaphor become the whole account. Rotate among water, mountain, wood, gates or paths, celestial order, and other culturally grounded structures while keeping the account's material and color identity coherent.
 - Use `东方壁纸` as the current title prefix. Do not use `玄学` in new titles unless the user explicitly asks to restore it; historical examples containing that word remain historical evidence only.
+- Before handing off or publishing copy, check the account's historical titles. Titles must not repeat; even for related themes, change the framing angle and keyword combination.
 - Disclose AI-assisted visual creation in the body and use the platform content declaration when available.
 - Never claim a camera, lens, location, or documentary event that did not exist.
 - Never click the final **Publish** button on Xiaohongshu, Douyin, or another platform. Upload assets, fill all fields, verify the preview, and stop immediately before publication for the user to confirm.
